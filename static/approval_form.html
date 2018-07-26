@@ -1,0 +1,381 @@
+
+<html>
+
+<head>
+  <meta name=标题 content="">
+  <meta name=关键词 content="">
+  <meta http-equiv=Content-Type content="text/html; charset=x-mac-chinesesimp">
+  <meta name=Generator content="Microsoft Word 15 (filtered)">
+  <style>
+    <!--
+    /* Font Definitions */
+    @font-face
+    {font-family:"Courier New";
+      panose-1:2 7 3 9 2 2 5 2 4 4;}
+    @font-face
+    {font-family:Wingdings;
+      panose-1:5 0 0 0 0 0 0 0 0 0;}
+    @font-face
+    {font-family:宋体;}
+    @font-face
+    {font-family:"Cambria Math";
+      panose-1:2 4 5 3 5 4 6 3 2 4;}
+    @font-face
+    {font-family:"\@宋体";}
+    @font-face
+    {font-family:Calibri;
+      panose-1:2 15 5 2 2 2 4 3 2 4;}
+    @font-face
+    {font-family:仿宋_GB2312;}
+    @font-face
+    {font-family:华文仿宋;}
+    @font-face
+    {font-family:"\@华文仿宋";}
+    @font-face
+    {font-family:仿宋;}
+    @font-face
+    {font-family:"\@仿宋";}
+    @font-face
+    {font-family:"\@仿宋_GB2312";}
+    /* Style Definitions */
+    p.MsoNormal, li.MsoNormal, div.MsoNormal
+    {margin:0cm;
+      margin-bottom:.0001pt;
+      text-align:justify;
+      text-justify:inter-ideograph;
+      font-size:16.0pt;
+      font-family:"Times New Roman";}
+    p.MsoNormalIndent, li.MsoNormalIndent, div.MsoNormalIndent
+    {margin:0cm;
+      margin-bottom:.0001pt;
+      text-align:justify;
+      text-justify:inter-ideograph;
+      text-indent:21.0pt;
+      font-size:10.5pt;
+      font-family:"Times New Roman";}
+    p.MsoHeader, li.MsoHeader, div.MsoHeader
+    {margin:0cm;
+      margin-bottom:.0001pt;
+      text-align:center;
+      layout-grid-mode:char;
+      border:none;
+      padding:0cm;
+      font-size:9.0pt;
+      font-family:"Times New Roman";}
+    p.MsoFooter, li.MsoFooter, div.MsoFooter
+    {margin:0cm;
+      margin-bottom:.0001pt;
+      layout-grid-mode:char;
+      font-size:9.0pt;
+      font-family:"Times New Roman";}
+    p.MsoPlainText, li.MsoPlainText, div.MsoPlainText
+    {margin:0cm;
+      margin-bottom:.0001pt;
+      text-align:justify;
+      text-justify:inter-ideograph;
+      font-size:16.0pt;
+      font-family:宋体;}
+    p.MsoAcetate, li.MsoAcetate, div.MsoAcetate
+    {margin:0cm;
+      margin-bottom:.0001pt;
+      text-align:justify;
+      text-justify:inter-ideograph;
+      font-size:9.0pt;
+      font-family:"Times New Roman";}
+    span.a
+    {font-family:宋体;}
+    span.a0
+    {font-family:"Times New Roman";}
+    span.a1
+    {font-family:"Times New Roman";}
+    span.a2
+    {font-family:"Times New Roman";}
+    /* Page Definitions */
+    @page WordSection1
+    {size:595.3pt 841.9pt;
+      margin:72.0pt 90.0pt 72.0pt 90.0pt;
+      layout-grid:21.75pt;}
+    div.WordSection1
+    {page:WordSection1;}
+    /* List Definitions */
+    ol
+    {margin-bottom:0cm;}
+    ul
+    {margin-bottom:0cm;}
+    -->
+  </style>
+  <script src="axios.min.js"></script>
+  <script src="tempo.min.js"></script>
+  <script>
+    //获得xmid=xxx
+    var a=window.location.href.split("?")[1];
+    //获得xxx
+    var xmid=a.split("=")[1];
+    console.log(a)
+    console.log(xmid)
+    var xm={}
+    axios.get('http://localhost:8080/api/xm/getXmByXmid', {
+      params: {
+        xmid: xmid
+      }
+    })
+      .then(res=>{
+        console.log(res.data)
+        xm=res.data;
+        console.log(xm);
+        Tempo.prepare("xm").render(xm);
+      })
+      .catch(function (error) {
+        console.log(error);
+      });
+      setTimeout(()=>{
+        window.print()
+      },1000)
+  </script>
+</head>
+
+<body lang=ZH-CN style='text-justify-trim:punctuation'>
+
+<div id="xm" data-template class=WordSection1 style='layout-grid:21.75pt'>
+
+  <p class=MsoNormal align=left style='text-align:left;line-height:20.0pt'><span
+    lang=EN-US style='font-family:华文仿宋'>&nbsp;</span></p>
+
+  <p class=MsoNormal align=center style='text-align:center;line-height:20.0pt'><a
+    name="OLE_LINK46"><b><span style='font-family:仿宋_GB2312'>广州港数据科技有限公司项目审批表</span></b></a></p>
+
+  <p class=MsoPlainText align=center style='text-align:center'><b><span
+    lang=X-NONE style='font-size:6.5pt'>&nbsp;</span></b></p>
+
+  <div align=center>
+
+    <table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0 width=481
+           style='width:480.5pt;border-collapse:collapse;border:none'>
+      <tr style='height:36.15pt'>
+        <td width=89 style='width:89.3pt;border-top:1.5pt;border-left:1.5pt;
+  border-bottom:1.0pt;border-right:1.0pt;border-color:windowtext;border-style:
+  solid;padding:0cm 5.4pt 0cm 5.4pt;height:36.15pt'>
+          <p class=MsoNormal align=center style='text-align:center;line-height:26.0pt'><span
+            style='font-size:14.0pt;font-family:仿宋_GB2312'>主项目名称</span></p>
+        </td>
+        <td width=391 colspan=4 style='width:391.2pt;border-top:solid windowtext 1.5pt;
+  border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:36.15pt'>
+          <p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;font-family:宋体'>&nbsp;</span>{{xmmc}}</p>
+        </td>
+      </tr>
+      <tr style='height:36.15pt'>
+        <td width=89 style='width:89.3pt;border-top:none;border-left:solid windowtext 1.5pt;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:36.15pt'>
+          <p class=MsoNormal align=center style='text-align:center;line-height:26.0pt'><span
+            style='font-size:14.0pt;font-family:仿宋_GB2312'>子项目名称</span></p>
+        </td>
+        <td width=391 colspan=4 style='width:391.2pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:36.15pt'>
+          <p class=MsoNormal><span lang=EN-US style='font-size:12.0pt;font-family:宋体'>&nbsp;</span>{{zxmmc}}</p>
+        </td>
+      </tr>
+      <tr style='height:32.7pt'>
+        <td width=89 style='width:89.3pt;border-top:none;border-left:solid windowtext 1.5pt;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:32.7pt'>
+          <p class=MsoNormal align=center style='text-align:center;line-height:26.0pt'><span
+            style='font-size:14.0pt;font-family:仿宋_GB2312'>项目负责人</span></p>
+        </td>
+        <td width=143 colspan=2 style='width:143.25pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:32.7pt'>
+          <p class=MsoNormal align=center style='text-align:center;line-height:26.0pt'><span
+            lang=EN-US style='font-size:14.0pt;font-family:宋体'>&nbsp;</span>{{xmfzr}}</p>
+        </td>
+        <td width=85 style='width:85.35pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:32.7pt'>
+          <p class=MsoNormal align=center style='text-align:center;line-height:26.0pt'><span
+            style='font-size:14.0pt;font-family:仿宋_GB2312'>联系方式</span></p>
+        </td>
+        <td width=163 style='width:162.6pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:32.7pt'>
+          <p class=MsoNormal style='line-height:26.0pt'><span lang=EN-US
+                                                              style='font-size:14.0pt;font-family:宋体'>&nbsp;</span>{{bz}}</p>
+        </td>
+      </tr>
+      <tr style='height:32.7pt'>
+        <td width=89 style='width:89.3pt;border-top:none;border-left:solid windowtext 1.5pt;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:32.7pt'>
+          <p class=MsoNormal align=center style='text-align:center;line-height:26.0pt'><span
+            style='font-size:14.0pt;font-family:仿宋_GB2312'>项目类别</span></p>
+        </td>
+        <td width=143 colspan=2 style='width:143.25pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:32.7pt'>
+          <p class=MsoNormal align=center style='text-align:center;line-height:26.0pt'><span
+            lang=EN-US style='font-size:14.0pt;font-family:宋体'>&nbsp;</span>{{xmlx}}</p>
+        </td>
+        <td width=85 style='width:85.35pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:32.7pt'>
+          <p class=MsoNormal align=center style='text-align:center;line-height:26.0pt'><span
+            style='font-size:14.0pt;font-family:仿宋_GB2312'>预计工期</span></p>
+        </td>
+        <td width=163 style='width:162.6pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:32.7pt'>
+          <p class=MsoNormal style='line-height:26.0pt'><span lang=EN-US
+                                                              style='font-size:14.0pt;font-family:宋体'>&nbsp;</span>{{xmgq}}</p>
+        </td>
+      </tr>
+      <tr style='height:32.7pt'>
+        <td width=89 style='width:89.3pt;border-top:none;border-left:solid windowtext 1.5pt;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:32.7pt'>
+          <p class=MsoNormal align=center style='text-align:center;line-height:26.0pt'><span
+            style='font-size:14.0pt;font-family:仿宋_GB2312'>资金来源</span></p>
+        </td>
+        <td width=143 colspan=2 style='width:143.25pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:32.7pt'>
+          <p class=MsoNormal align=center style='text-align:center;line-height:26.0pt'><span
+            lang=EN-US style='font-size:14.0pt;font-family:宋体'>&nbsp;</span>{{zjly}}</p>
+        </td>
+        <td width=85 style='width:85.35pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:32.7pt'>
+          <p class=MsoNormal align=center style='text-align:center;line-height:26.0pt'><span
+            style='font-size:14.0pt;font-family:仿宋_GB2312'>预算金额</span></p>
+        </td>
+        <td width=163 style='width:162.6pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:32.7pt'>
+          <p class=MsoNormal style='line-height:26.0pt'><span lang=EN-US
+                                                              style='font-size:14.0pt;font-family:宋体'>&nbsp;</span>{{ysje}}</p>
+        </td>
+      </tr>
+      <tr style='height:127.05pt'>
+        <td width=89 style='width:89.3pt;border-top:none;border-left:solid windowtext 1.5pt;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:127.05pt'>
+          <p class=MsoNormal align=center style='text-align:center;line-height:26.0pt'><span
+            style='font-size:14.0pt;font-family:仿宋_GB2312'>项目内容</span></p>
+          <p class=MsoNormal align=center style='text-align:center;line-height:26.0pt'><span
+            style='font-size:14.0pt;font-family:仿宋_GB2312'>概要</span></p>
+        </td>
+        <td width=391 colspan=4 valign=top style='width:391.2pt;border-top:none;
+  border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:127.05pt'>
+          <p class=MsoNormal style='line-height:26.0pt'><span lang=EN-US
+                                                              style='font-size:14.0pt;font-family:宋体'>&nbsp;</span>{{xmnrgy}}</p>
+        </td>
+      </tr>
+      <tr style='height:38.25pt'>
+        <td width=89 rowspan=4 style='width:89.3pt;border-top:none;border-left:solid windowtext 1.5pt;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:38.25pt'>
+          <p class=MsoNormal align=center style='text-align:center;line-height:28.0pt'><span
+            style='font-size:14.0pt;font-family:仿宋_GB2312'>会签意见</span></p>
+        </td>
+        <td width=85 style='width:3.0cm;border-top:none;border-left:none;border-bottom:
+  solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:38.25pt'>
+          <p class=MsoNormal align=center style='text-align:center;line-height:28.0pt'><span
+            style='font-size:14.0pt;font-family:仿宋_GB2312'>主办部门</span></p>
+        </td>
+        <td width=306 colspan=3 style='width:306.15pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:38.25pt'>
+          <p class=MsoNormal style='line-height:28.0pt'><span lang=EN-US
+                                                              style='font-size:14.0pt;font-family:宋体'>&nbsp;</span></p>
+        </td>
+      </tr>
+      <tr style='height:38.25pt'>
+        <td width=85 style='width:3.0cm;border-top:none;border-left:none;border-bottom:
+  solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:38.25pt'>
+          <p class=MsoNormal align=center style='text-align:center;line-height:28.0pt'><span
+            style='font-size:14.0pt;font-family:仿宋_GB2312'>协办部门</span></p>
+        </td>
+        <td width=306 colspan=3 style='width:306.15pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:38.25pt'>
+          <p class=MsoNormal style='line-height:28.0pt'><span lang=EN-US
+                                                              style='font-size:14.0pt;font-family:宋体'>&nbsp;</span></p>
+        </td>
+      </tr>
+      <tr style='height:39.45pt'>
+        <td width=85 style='width:3.0cm;border-top:none;border-left:none;border-bottom:
+  solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:39.45pt'>
+          <p class=MsoNormal align=center style='text-align:center;line-height:28.0pt'><span
+            style='font-size:14.0pt;font-family:仿宋_GB2312'>业务拓展部</span></p>
+        </td>
+        <td width=306 colspan=3 style='width:306.15pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:39.45pt'>
+          <p class=MsoNormal style='line-height:28.0pt'><span lang=EN-US
+                                                              style='font-size:14.0pt;font-family:宋体'>&nbsp;</span></p>
+        </td>
+      </tr>
+      <tr style='height:38.5pt'>
+        <td width=85 style='width:3.0cm;border-top:none;border-left:none;border-bottom:
+  solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:38.5pt'>
+          <p class=MsoNormal align=center style='text-align:center;line-height:28.0pt'><span
+            style='font-size:14.0pt;font-family:仿宋_GB2312'>财务会计部</span></p>
+        </td>
+        <td width=306 colspan=3 style='width:306.15pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:38.5pt'>
+          <p class=MsoNormal style='line-height:28.0pt'><span lang=EN-US
+                                                              style='font-size:14.0pt;font-family:宋体'>&nbsp;</span></p>
+        </td>
+      </tr>
+      <tr style='height:65.85pt'>
+        <td width=174 colspan=2 style='width:174.35pt;border-top:none;border-left:
+  solid windowtext 1.5pt;border-bottom:solid windowtext 1.0pt;border-right:
+  solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:65.85pt'>
+          <p class=MsoNormal align=center style='text-align:center;line-height:28.0pt'><span
+            style='font-size:14.0pt;font-family:仿宋_GB2312'>分管副总经理审批意见</span></p>
+        </td>
+        <td width=306 colspan=3 style='width:306.15pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:65.85pt'>
+          <p class=MsoNormal style='line-height:28.0pt'><span lang=EN-US
+                                                              style='font-size:14.0pt;font-family:宋体'>&nbsp;</span></p>
+        </td>
+      </tr>
+      <tr style='height:81.05pt'>
+        <td width=174 colspan=2 style='width:174.35pt;border-top:none;border-left:
+  solid windowtext 1.5pt;border-bottom:solid windowtext 1.5pt;border-right:
+  solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:81.05pt'>
+          <p class=MsoNormal align=center style='text-align:center;line-height:28.0pt'><span
+            style='font-size:14.0pt;font-family:仿宋_GB2312'>总经理审批意见</span></p>
+        </td>
+        <td width=306 colspan=3 style='width:306.15pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.5pt;border-right:solid windowtext 1.5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:81.05pt'>
+          <p class=MsoNormal style='line-height:28.0pt'><span lang=EN-US
+                                                              style='font-size:14.0pt;font-family:宋体'>&nbsp;</span></p>
+        </td>
+      </tr>
+      <tr height=0>
+        <td width=89 style='border:none'></td>
+        <td width=85 style='border:none'></td>
+        <td width=58 style='border:none'></td>
+        <td width=85 style='border:none'></td>
+        <td width=163 style='border:none'></td>
+      </tr>
+    </table>
+
+  </div>
+
+  <p class="MsoNormal">
+    <span lang="EN-US">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="font-family:仿宋_GB2312">经办人：</span> <span lang="EN-US">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="font-family:仿宋_GB2312">日期：</span><span lang="EN-US">&nbsp; </span></p>
+</div>
+
+</body>
+
+</html>

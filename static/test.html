@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>tempo example</title>
+  <script src="tempo.min.js"></script>
+</head>
+<body>
+<ul id="users">
+  <li data-template>
+    {{firstName}} {{lastName}}
+  </li>
+  <li data-template-fallback>Meh... we don't have no users today.</li>
+</ul>
+<script>
+  var data = {
+    people: [
+      { 'firstName': 'Clark', 'lastName': 'Kent' },
+      { 'firstName': 'Bruce', 'lastName': 'Wayne' },
+      { 'firstName': 'Peter', 'lastName': 'Parker' }
+    ]
+  }
+  Tempo.prepare("users").render(data.people);
+</script>
+</body>
+</html>
